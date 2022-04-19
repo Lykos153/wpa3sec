@@ -26,7 +26,7 @@ index 4b363cb..1918c32 100644
  
 -#if !defined(CONFIG_X86_64) && !defined(CONFIG_X86) && !defined(CONFIG_ARM)
 +#if !defined(CONFIG_X86_64) && !defined(CONFIG_X86) && !defined(CONFIG_ARM) && !defined(CONFIG_MIPS)
- 	printk(KERN_ALERT "Error: this module only supports x86(_64) or ARM\n");
+ 	printk(KERN_ALERT "Error: this module only supports x86(_64), ARM or MIPS\n");
  	return -EINVAL;
  #endif
 -- 
