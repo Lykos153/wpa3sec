@@ -21,7 +21,7 @@ define Package/dragondrain
   CATEGORY:=Network
   TITLE:=Tools for the Dragondrain attack
   URL:=https://github.com/vanhoefm/dragondrain-and-time
-  DEPENDS:=+libopenssl +zlib +libnl-tiny +libstdcpp +libpcre
+  DEPENDS:=+libopenssl +zlib +libnl-core +libnl-genl +libstdcpp +libpcre
 endef
 
 define Package/dragondrain/description
@@ -32,7 +32,6 @@ endef
 
 TARGET_CPPFLAGS := \
 	-D_GNU_SOURCE \
-	-I$(STAGING_DIR)/usr/include/libnl-tiny \
 	-I$(PKG_BUILD_DIR) \
 	$(TARGET_CPPFLAGS) \
 	-I$(LINUX_DIR)/user_headers/include
