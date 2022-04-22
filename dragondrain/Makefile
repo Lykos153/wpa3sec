@@ -21,7 +21,7 @@ define Package/dragondrain
   CATEGORY:=Network
   TITLE:=Tools for the Dragondrain attack
   URL:=https://github.com/vanhoefm/dragondrain-and-time
-  DEPENDS:=+libopenssl +zlib +libnl-tiny +libstdcpp
+  DEPENDS:=+libopenssl +zlib +libnl-tiny +libstdcpp +libpcre
 endef
 
 define Package/dragondrain/description
