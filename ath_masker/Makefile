@@ -18,6 +18,7 @@ define KernelPackage/ath_masker
   SUBMENU:=Other modules
   TITLE:=Kernel module to help spoof multiple MAC addresses
   FILES:=$(PKG_BUILD_DIR)/ath_masker.ko
+  DEPENDS:=+@KERNEL_KPROBES
 endef
 
 include $(INCLUDE_DIR)/kernel-defaults.mk
